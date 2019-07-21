@@ -31,6 +31,7 @@ import {
   MatSnackBarModule,
   MatStepperModule
 } from '@angular/material';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   imports: [
@@ -62,7 +63,8 @@ import {
     MatNativeDateModule,
     MatProgressBarModule,
     MatSnackBarModule,
-    MatStepperModule
+    MatStepperModule,
+    MatButtonToggleModule
   ],
   exports: [
     MatButtonModule,
@@ -93,7 +95,8 @@ import {
     MatNativeDateModule,
     MatProgressBarModule,
     MatSnackBarModule,
-    MatStepperModule
+    MatStepperModule,
+    MatButtonToggleModule
   ]
 })
 export class MaterialModule {}
