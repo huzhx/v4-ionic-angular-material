@@ -1,3 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 88%;
+  margin: auto;
+  padding-top: 24px;
+}
+
 mat-button-toggle-group {
   flex-wrap: wrap;
 }
@@ -21,4 +30,12 @@ mat-button-toggle-group {
 ::ng-deep .mat-button-toggle-checked {
   background-color: #ffd54f;
   color: #000000;
+}
+
+.button-row {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
 }

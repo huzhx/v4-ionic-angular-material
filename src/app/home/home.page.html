@@ -8,10 +8,23 @@
 
 <ion-content>
   <div class="ion-padding">
-    <mat-button-toggle-group multiple vertical="false">
-      <mat-button-toggle *ngFor="let option of options" [value]="option">
-        {{ option }}
-      </mat-button-toggle>
-    </mat-button-toggle-group>
+    <form class="container" [formGroup]="testForm" (ngSubmit)="onSubmit()">
+      <mat-button-toggle-group formControlName="values" multiple vertical="false">
+        <mat-button-toggle *ngFor="let option of options" [value]="option">
+          {{ option }}
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <div class="button-row">
+        <button
+          tappable
+          type="submit"
+          mat-raised-button
+          color="primary"
+          [disabled]="testForm.invalid"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
   </div>
 </ion-content>

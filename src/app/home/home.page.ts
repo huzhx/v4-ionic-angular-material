@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -6,29 +7,42 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
+  testForm: FormGroup;
   options: string[];
 
-  constructor() {
+  constructor(private formBuilder: FormBuilder) {
     this.options = [
-      'Good parent',
-      'Disciplined',
-      'Good community member',
-      'Staying close to extended family',
       'Strong',
-      'On top of things',
-      'Respected at home',
-      'Considerate',
-      'Responsible',
-      'In control',
-      'Youthful',
       'Popular',
-      'Independent',
+      'Youthful',
+      'Spiritual',
       'Energetic',
       'Competent',
-      'Good spouse/partner',
+      'Considerate',
+      'Responsible',
+      'Disciplined',
+      'Independent',
+      'In control',
+      'Good parent',
       'Not hypocritical',
-      'Spiritual',
-      'Doing God’s will'
+      'Doing God’s will',
+      'On top of things',
+      'Respected at home',
+      'Good spouse/partner',
+      'Good community member',
+      'Staying close to extended family'
     ];
+    this.createForm();
+  }
+
+  createForm() {
+    this.testForm = this.formBuilder.group({
+      values: ['', Validators.required]
+    });
+  }
+
+  onSubmit() {
+    console.log('click submit button');
+    console.log(this.testForm.value);
   }
 }

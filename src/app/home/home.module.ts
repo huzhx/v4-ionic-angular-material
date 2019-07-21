@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from '../material.module';
 
@@ -19,7 +20,8 @@ import { HomePage } from './home.page';
         component: HomePage
       }
     ]),
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   declarations: [HomePage]
 })
