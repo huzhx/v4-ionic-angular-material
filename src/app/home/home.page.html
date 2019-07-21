@@ -8,12 +8,10 @@
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>
-      If you get lost, the
-      <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be
-      your guide.
-    </p>
-    <button tappable mat-raised-button color="primary">Click</button>
+    <mat-button-toggle-group multiple vertical="false">
+      <mat-button-toggle *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-button-toggle>
+    </mat-button-toggle-group>
   </div>
 </ion-content>

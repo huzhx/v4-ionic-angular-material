@@ -1,1 +1,24 @@
+mat-button-toggle-group {
+  flex-wrap: wrap;
+}
 
+::ng-deep .mat-button-toggle-group-appearance-standard {
+  border-color: transparent;
+}
+
+::ng-deep mat-button-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+::ng-deep .mat-button-toggle-label-content {
+  padding: 0 20px !important;
+}
+
+::ng-deep .mat-button-toggle-button {
+  font-size: 18px !important;
+}
+
+::ng-deep .mat-button-toggle-checked {
+  background-color: #ffd54f;
+  color: #000000;
+}
