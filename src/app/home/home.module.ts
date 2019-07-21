@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { MaterialModule } from '../material.module';
+
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -16,7 +18,8 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    MaterialModule
   ],
   declarations: [HomePage]
 })
