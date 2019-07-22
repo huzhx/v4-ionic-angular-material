@@ -7,14 +7,36 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>
-      If you get lost, the
-      <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be
-      your guide.
-    </p>
-    <button tappable mat-raised-button color="primary">Click</button>
+  <div class="container">
+    <form class="container">
+      <mat-card>
+        <mat-card-title class="card-title-row">
+          What will you do to get enough dialysis? Select one. If you select Other, please specify.
+        </mat-card-title>
+        <mat-card-content>
+          <div class="container-column" class="radio-button-group container-column">
+            <mat-radio-group>
+              <mat-radio-button
+                class="radio-button"
+                *ngFor="let option of options"
+                [value]="option"
+                disableRipple="false"
+              >
+                {{ option }}
+              </mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <div class="button-row">
+        <button class="secondaryBtn" color="primary" mat-stroked-button type="button">
+          Prev Question
+        </button>
+        <button tappable class="primaryBtn" color="primary" mat-raised-button>
+          Next Question
+        </button>
+      </div>
+    </form>
   </div>
 </ion-content>
 

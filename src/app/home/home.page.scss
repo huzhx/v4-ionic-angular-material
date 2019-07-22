@@ -1,3 +1,86 @@
-ion-row {
-  height: 100%;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.container form {
+  margin-top: 0px;
+  width: 85%;
+  margin: auto;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+}
+
+mat-card {
+  margin-bottom: 30px !important;
+  font-size: 21px;
+  text-align: start;
+}
+
+mat-card-title {
+  font-size: 21px;
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+.card-title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+mat-radio-button {
+  width: 100%;
+}
+
+.radio-button {
+  align-content: flex-start;
+  padding-left: 16px;
+}
+
+.mat-radio-button:hover {
+  background-color: #f5f5f5;
+}
+
+::ng-deep .mat-radio-label {
+  width: 100% !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 21px;
+  white-space: normal !important;
+}
+
+.radio-button-group {
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+
+::ng-deep .mat-radio-label-content {
+  padding-left: 16px !important;
+  padding-right: 8px !important;
+  font-size: 21px;
+}
+
+.primaryBtn {
+  margin-left: 10px;
+}
+
+.secondaryBtn {
+  margin-right: 10px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
 }
