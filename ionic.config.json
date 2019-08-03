@@ -1,5 +1,7 @@
 {
   "name": "v4-ionic-angular-material",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
